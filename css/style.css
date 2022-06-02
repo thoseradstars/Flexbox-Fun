@@ -1,0 +1,98 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.mainSection > .topSection > section{
+     border: 2px solid black;
+     height: 100px;
+     width: 300px;
+     background-color: darkorchid;
+}
+
+.bottomSection > section{
+     border: 2px solid black;
+     height: 100px;
+     width: 400px;
+     background-color: aqua;
+}
+
+header, footer{
+     clear: both;
+     height: 100px;
+     background-color: deeppink;
+}
+
+.topSection{
+     display: flex;
+}
+
+.topSection{
+     justify-content: space-evenly;
+}
+
+.bottomSection{
+     display: flex;
+}
+
+.bottomSection{
+     justify-content: space-evenly;
+}
+
+.mainSection > .topSection > .section1{
+     background-color: red;
+     order: 2;
+}
+
+.mainSection > .topSection > .section3{
+     background-color: green;
+     order: 0;
+}
+
+.mainSection{
+     display: flex;
+}
+
+.mainSection{
+     justify-content: center;
+     flex-wrap: wrap;
+}
+
+
